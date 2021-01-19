@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    /*TEST*/
+    height: 500px;
+    background-color: coral;
+}
+
+main{
+    /*TEST*/
+    height: 800px;
+    background-color: lightgrey;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    /*TEST*/
+    height: 200px;
+    background-color: pink;
+}
+
+.container-small{
+    width: 75%;
+    margin: auto;
+    /*TEST*/
+    height: 200px;
+    background-color: blueviolet;
+}
