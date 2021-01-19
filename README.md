@@ -2,15 +2,15 @@
 
 ## Divisione del progetto
 Il progetto si divide in 2 parti
-1.Layout della pagina
-2.Elementi dinamici inseriti tramite Vue.js
+1. Layout della pagina
+2. Elementi dinamici inseriti tramite Vue.js
 
 ### Layout della pagina
 Tecnologia css principalmente usata: flexbox.
 La pagina viene suddivisa in 3 sezioni principali
-1.Header
-2.Main
-3.Footer
+1. Header
+2. Main
+3. Footer
 
 #### Header
 Contiene la navbar del sito e un carosello. Le informazioni contenute in questi elementi verranno visualizzate nella pagina tramite Vue.
