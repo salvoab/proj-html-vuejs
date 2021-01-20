@@ -66,28 +66,16 @@
 
             <footer>
                 <div class="container-small d-flex space-between">
-                    <div class="col-3">
+                    <div v-for="column in footerColumns" class="col-3">
                         <div class="footer-card">
-                            <h3>About</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita dolores excepturi ducimus autem dignissimos minus deleniti, mollitia vitae laudantium minima, aut dolor provident quod consequuntur modi harum consequatur voluptatum. Numquam quasi quidem corrupti excepturi saepe illum nesciunt. Commodi veritatis fuga quidem, placeat dolorum iste voluptate quae ex fugiat autem quasi alias molestias! Beatae aut, necessitatibus natus corporis perspiciatis dolor.</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="footer-card">
-                            <h3>About</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita dolores excepturi ducimus autem dignissimos minus deleniti, mollitia vitae laudantium minima, aut dolor provident quod consequuntur modi harum consequatur voluptatum. Numquam quasi quidem corrupti excepturi saepe illum nesciunt. Commodi veritatis fuga quidem, placeat dolorum iste voluptate quae ex fugiat autem quasi alias molestias! Beatae aut, necessitatibus natus corporis perspiciatis dolor.</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="footer-card">
-                            <h3>About</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita dolores excepturi ducimus autem dignissimos minus deleniti, mollitia vitae laudantium minima, aut dolor provident quod consequuntur modi harum consequatur voluptatum. Numquam quasi quidem corrupti excepturi saepe illum nesciunt. Commodi veritatis fuga quidem, placeat dolorum iste voluptate quae ex fugiat autem quasi alias molestias! Beatae aut, necessitatibus natus corporis perspiciatis dolor.</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="footer-card">
-                            <h3>About</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita dolores excepturi ducimus autem dignissimos minus deleniti, mollitia vitae laudantium minima, aut dolor provident quod consequuntur modi harum consequatur voluptatum. Numquam quasi quidem corrupti excepturi saepe illum nesciunt. Commodi veritatis fuga quidem, placeat dolorum iste voluptate quae ex fugiat autem quasi alias molestias! Beatae aut, necessitatibus natus corporis perspiciatis dolor.</p>
+                            <h3>{{column.columnTitle}}</h3>
+                            <p v-if="column.typeOfContent == 'paragraph' ">{{column.data}}</p>
+                            <ul v-if="column.typeOfContent == 'list' " class="fa-ul">
+                                <li v-for="liElement in column.data" :class="(liElement.iconClass == '') ? 'ml-negative-40' : 'ml-negative-24' ">
+                                    <span class="fa-li"><i :class="liElement.iconClass"></i></span>
+                                    {{liElement.liContent}}
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

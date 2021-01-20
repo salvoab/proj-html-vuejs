@@ -10,6 +10,14 @@
     display: flex;
 }
 
+.ml-negative-40{
+    margin-left: -40px;
+}
+
+.ml-negative-24{
+    margin-left: -24px;
+}
+
 .space-between{
     justify-content: space-between;
 }
@@ -190,6 +198,7 @@ footer{
 
 .footer-card h3{
     font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
     color: #FFFFFF;
 }
 .footer-card h3::after{
@@ -200,7 +209,7 @@ footer{
     margin: 12px 0;
     background-color: #FF4612;
 }
-.footer-card p{
+.footer-card p, .footer-card li{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: #D2D2D2;
