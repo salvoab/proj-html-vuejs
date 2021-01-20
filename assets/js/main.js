@@ -8,7 +8,7 @@ let app = new Vue({
             {
                 columnTitle: 'About',
                 typeOfContent: 'paragraph',
-                data: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita dolores excepturi ducimus autem dignissimos minus deleniti, mollitia vitae laudantium minima.'
+                data: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita.'
             },
             {
                 columnTitle: 'Twitter',
@@ -51,7 +51,7 @@ let app = new Vue({
                 ]
             },
             {
-                columnTitle: 'Important links',
+                columnTitle: 'Contact me',
                 typeOfContent: 'list',
                 data:[
                     {

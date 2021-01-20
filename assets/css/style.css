@@ -210,9 +210,62 @@ footer{
     background-color: #FF4612;
 }
 .footer-card p, .footer-card li{
+    line-height: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: #D2D2D2;
+}
+.footer-card p{
+    padding-top: 6px;
+}
+
+.footer-card li{
+    padding: 5px 0;
+}
+.footer-card li a{
+    color: #D2D2D2;
+}
+.footer-card li i{
+    color: #FF4612;
+}
+.footer-card .icon-box{
+    width: 90px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-card .icon-wrapper{
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    background-color: #D2D2D2;
+}
+.footer-card .icon-wrapper:hover{
+    cursor: pointer;
+    background-color: #FF4612;
+}
+
+.footer-form-wrapper{
+    margin-top: 30px;
+    border-bottom: 2px solid #D2D2D2;
+}
+.footer-form-wrapper input, .footer-form-wrapper button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: transparent;
+    border: none
+}
+.footer-form-wrapper input{
+    width: 66%;
+}
+.footer-form-wrapper button{
+    width: 20%;
+    color: #D2D2D2;
+    cursor: pointer;
 }
 
 .copyright{

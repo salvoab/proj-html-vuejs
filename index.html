@@ -73,9 +73,28 @@
                             <ul v-if="column.typeOfContent == 'list' " class="fa-ul">
                                 <li v-for="liElement in column.data" :class="(liElement.iconClass == '') ? 'ml-negative-40' : 'ml-negative-24' ">
                                     <span class="fa-li"><i :class="liElement.iconClass"></i></span>
-                                    {{liElement.liContent}}
+                                    <a href="#">{{liElement.liContent}}</a>
                                 </li>
                             </ul>
+
+                            <div v-if="column.columnTitle == 'About' " class="icon-box">
+                                <div class="icon-wrapper">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="icon-wrapper">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="icon-wrapper">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </div>
+
+                            <div v-if="column.columnTitle == 'Contact me' " class="footer-form-wrapper">
+                                <form>
+                                    <input type="text" placeholder="Your Name">
+                                    <button type="submit">SUBSCRIBE</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
