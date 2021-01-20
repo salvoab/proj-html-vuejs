@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Esercizio</title>
         <!-- axios CDN -->
@@ -10,19 +12,55 @@
     </head>
     <body>
         <div id="root">
-          <header>
-              <div class="container"></div>
-          </header>
+            <header>
+                <div class="container">
+                    <!-- navbar con link presi dall'istanza Vue -->
+                    <nav>
+                        <img src="./assets/img/logo-img-01.png" alt="logo">
+                        <ul>
+                            <li v-for="(link, index) in navbarLinks">
+                                <svg v-if="activeLinkIndex == index" fill="#FF4612" xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="height:20px"><path d="M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z"/></svg>
+                                <a href="#" :class="(activeLinkIndex == index) ? 'active' : '' ">{{link}}</a>
+                            </li>
+                            <li><i class="fas fa-search fa-lg fa-fw"></i></li>
+                            <li><i class="fas fa-list fa-lg fa-fw"></i></li>
+                        </ul>
+                    </nav>
 
-          <main>
-              <div class="container"></div>
-          </main>
+                    <!-- Header Carousel -->
+                    <div class="header-carousel">
+                        <div class="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="height:24px" fill="#1E1E1E"><path d="M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z"/></svg>
+                        </div>
+                        <div class="carousel-content">
+                            <div class="carousel-text">
+                                <h1>Our Teams<span>.</span></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi quod.</p>
+                                <a href="#" class="button button-white">
+                                    <div class="button-text">READ MORE</div>
+                                    <div class="button-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="height:24px" fill="#1E1E1E"><path d="M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z"/></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                      <div class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="height:24px" fill="#1E1E1E"><path d="M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z"/></svg>
+                      </div>
+                    </div>
 
-          <footer>
-              <div class="container-small">
+                </div>
+            </header>
 
-              </div>
-          </footer>
+            <main>
+                <div class="container"></div>
+            </main>
+
+            <footer>
+                <div class="container-small">
+
+                </div>
+            </footer>
             
         </div>
 
