@@ -6,6 +6,14 @@
 
 /************/
 /* Utility */
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
 .button{
     display: flex;
     align-items: center;
@@ -54,6 +62,7 @@
     68% {left: 0px;}
     100% {left: 10px;}
 }
+
 /*********/
 /* TYPO */
 a {
@@ -160,9 +169,49 @@ main{
 }
 
 .container-small{
-    width: 75%;
+    width: 70%;
     margin: auto;
-    /*TEST*/
-    height: 200px;
-    background-color: blueviolet;
+}
+
+.col-3{
+    width: calc(100% / 4);
+}
+
+/***********/
+/* FOOTER */
+footer{
+    background-color: #181515;
+}
+
+.footer-card{
+    width: 90%;
+    padding: 40px 0;
+}
+
+.footer-card h3{
+    font-family: 'Libre Baskerville', serif;
+    color: #FFFFFF;
+}
+.footer-card h3::after{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 12px 0;
+    background-color: #FF4612;
+}
+.footer-card p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #D2D2D2;
+}
+
+.copyright{
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #d2d2d2;
+    background-color: #FF4612;
 }
