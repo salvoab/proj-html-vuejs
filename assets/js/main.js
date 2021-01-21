@@ -101,6 +101,9 @@ let app = new Vue({
             } else {
                 this.headerCarouselIndex++;
             }
+        },
+        topScroll(){
+            window.scroll(0, 0);
         }
     }
     
