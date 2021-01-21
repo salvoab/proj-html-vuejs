@@ -94,7 +94,7 @@ ul{
 header{
     height: 744px;
     padding-top: 24px;
-    background-image: url('../img/rev-slider-main-home-img-03.jpg');
+    /*background-image: url('../img/rev-slider-main-home-img-03.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
 }

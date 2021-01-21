@@ -4,6 +4,23 @@ let app = new Vue({
     data: {
         navbarLinks: ['Homes', 'Pages', 'Shop', 'Events', 'Elements'],
         activeLinkIndex: 0,
+        headerCarouselIndex: 0,
+        headerCarousel:[
+            {
+                title: 'Our Teams',
+                img: './assets/img/rev-slider-main-home-img-03.jpg',
+                paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi quod.'
+            },
+            {
+                title: 'Our Mission',
+                img: './assets/img/rev-slider-main-home-img-02.png',
+                paragraph: 'Some other Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi quod.'
+            }
+        ],
+        /*Vettore di oggetti, ogni oggetto rappresenta una colonna del footer
+        typeOfContent serve per distinguere fra colonne contenenti liste e colonne con un paragrafo
+        le liste sono rappresentate da un vettore di oggetti, in ciascun oggetto è indicata la classe
+        dell'icona usata per sostituire il classico cerchio delle ul, e il contenuto del list item*/
         footerColumns:[
             {
                 columnTitle: 'About',
@@ -69,6 +86,22 @@ let app = new Vue({
                 ]
             },
         ]
+    },
+    methods:{
+        prevHeader(){
+            if(this.headerCarouselIndex-1 < 0){
+                this.headerCarouselIndex = this.headerCarousel.length - 1;
+            } else {
+                this.headerCarouselIndex--;
+            }
+        },
+        nextHeader(){
+            if(this.headerCarouselIndex+1 >= this.headerCarousel.length){
+                this.headerCarouselIndex =  0;
+            } else {
+                this.headerCarouselIndex++;
+            }
+        }
     }
     
 });

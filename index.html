@@ -12,7 +12,7 @@
     </head>
     <body>
         <div id="root">
-            <header>
+            <header :style=" 'background-image: url(' + headerCarousel[headerCarouselIndex].img + ');' ">
                 <div class="container">
                     <!-- navbar con link presi dall'istanza Vue -->
                     <nav>
@@ -29,13 +29,13 @@
 
                     <!-- Header Carousel -->
                     <div class="header-carousel">
-                        <div class="prev">
+                        <div class="prev" @click="prevHeader">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="height:24px" fill="#1E1E1E"><path d="M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z"/></svg>
                         </div>
                         <div class="carousel-content">
                             <div class="carousel-text">
-                                <h1>Our Teams<span>.</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi quod.</p>
+                                <h1>{{headerCarousel[headerCarouselIndex].title}}<span>.</span></h1>
+                                <p>{{headerCarousel[headerCarouselIndex].paragraph}}</p>
                                 <div class="button-box">
                                     <a href="#" class="button button-white">
                                         <div class="button-text">READ MORE</div>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                         </div>
-                      <div class="next">
+                      <div class="next" @click="nextHeader">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="height:24px" fill="#1E1E1E"><path d="M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z"/></svg>
                       </div>
                     </div>
