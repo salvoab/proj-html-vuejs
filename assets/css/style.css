@@ -6,6 +6,10 @@
 
 /************/
 /* Utility */
+.bg-white{
+    background-color: #FFFFFF;
+}
+
 .d-flex{
     display: flex;
 }
@@ -265,7 +269,7 @@ main{
     padding: 10px 0;
     font-size: 11px;
 }
-.subtitle::after{
+.subtitle::after, .creative > h2::after{
     content: '';
     display: block;
     width: 26px;
@@ -302,6 +306,18 @@ main{
 .founder-info .icon-wrapper:hover{
     background-color: #181515;
     cursor: pointer;
+}
+/* Creative */
+.creative{
+    width: 50%;
+}
+.creative a{
+    padding: 30px 0;
+    color: #181515;
+}
+
+.istogram{
+    width: 50%;
 }
 
 .container{
