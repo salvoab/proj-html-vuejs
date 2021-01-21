@@ -196,8 +196,6 @@ nav a.active{
 /* MAIN */
 main{
     background-color: #FAFAFA;
-    /*TEST*/
-    height: 800px;
 }
 
 .specialities{
@@ -234,6 +232,76 @@ main{
 .card-specialities p{
     text-align: center;
     font-size: 12px;
+}
+
+/* Founder */
+.founder{
+    position: relative;
+}
+
+.founder > img{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: -140px;
+}
+
+.founder-content > img{
+    width: 500px;
+}
+
+.founder-info{
+    width: 570px;
+    height: 270px;
+    padding: 50px 30px;
+    background-color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+    top: 61px;
+    right: 59px;
+}
+
+.subtitle{
+    padding: 10px 0;
+    font-size: 11px;
+}
+.subtitle::after{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 12px 0;
+    background-color: #FF4612;
+}
+
+.founder-text{
+    font-size: 12px;
+}
+
+.icon-box{
+    width: 90px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-wrapper{
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    background-color: #FF4612;
+}
+
+.founder-info .icon-box{
+    color: #FFFFFF;
+}
+
+.founder-info .icon-wrapper:hover{
+    background-color: #181515;
+    cursor: pointer;
 }
 
 .container{
@@ -293,20 +361,8 @@ footer{
 .footer-card li i{
     color: #FF4612;
 }
-.footer-card .icon-box{
-    width: 90px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .footer-card .icon-wrapper{
-    width: 20px;
-    height: 20px;
-    padding: 4px;
-    border-radius: 50%;
-    font-size: 12px;
-    text-align: center;
     background-color: #D2D2D2;
 }
 .footer-card .icon-wrapper:hover{
