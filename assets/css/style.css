@@ -25,9 +25,24 @@
 .pt-50{
     padding-top: 50px;
 }
+.pt-80{
+    padding-top: 80px;
+}
+
+.py-50{
+    padding: 50px 0;
+}
 
 .space-between{
     justify-content: space-between;
+}
+
+.text-orange{
+    color: #FF4612;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .button{
@@ -89,6 +104,15 @@ ul{
     list-style: none;
 }
 
+h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A6A6A6;
+}
 /***********/
 /* HEADER */
 header{
@@ -161,9 +185,6 @@ nav a.active{
     font-family: Arial, Helvetica, sans-serif;
     color: #A6A6A6;
 }
-.carousel-text span{
-    color: #FF4612;
-}
 
 .button-box{
     width: 290px;
@@ -174,9 +195,45 @@ nav a.active{
 /*********/
 /* MAIN */
 main{
+    background-color: #FAFAFA;
     /*TEST*/
     height: 800px;
-    background-color: lightgrey;
+}
+
+.specialities{
+    position: relative;
+    top: -50px;
+    background-color: #FFFFFF;
+}
+
+.specialities > p{
+    position: relative;
+    padding: 30px;
+}
+
+.specialities > p::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 0;
+    width: 100px;
+    border-bottom: 2px solid #FF4612;
+}
+
+.card-specialities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-specialities h4{
+    padding: 12px 0;
+}
+.card-specialities p{
+    text-align: center;
+    font-size: 12px;
 }
 
 .container{
